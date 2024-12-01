@@ -1,0 +1,445 @@
+/* Base Styling */
+body {
+    margin: 0;
+    background-color: black;
+    font-family: monospace;
+    font-size: 18px; /* Keeps the font size unchanged */
+    text-decoration: none;
+    background-image: url('sub-pages/assets/wp9116463-4k-black-space-wallpapers1.jpg'); /* Path to the uploaded image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+
+}
+section{
+    height: 100vh;
+}
+
+* {
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+h1 {
+    text-align: center;
+    margin: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ /* Basic styles for hover effects and layout */
+ body {
+    text-align: center; /* Center align all text */
+}
+nav a {
+    transition: color 0.3s;
+    margin: 0 10px; /* Add margin between links */
+}
+nav a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+#ticker {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+#visitorCount {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+/*Hero Section - Sadia*/
+.video-container {
+    position: relative;
+    z-index: -1; /* Keep video behind the header and navbar */
+    width: 100%;
+    height: 100%; /* Ensure the video takes full available height */
+}
+
+/* Ensure video covers the entire section */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Let the video take the full viewport height */
+    object-fit: cover; /* Keep the aspect ratio and cover the container */
+}
+
+
+
+.hero-content{
+    padding: 150px;
+    font-family: monospace;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    margin-bottom: 60px
+}
+.hero-content h1{
+    line-height: 1;
+}
+.hero-content p{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+button{
+    padding: 25px 40px;
+    outline: none;
+    border-radius: 13px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 15px;
+    z-index: 3;
+    font-family: monospace;
+}
+
+.action-btn{
+    font-size: 18px;
+    background: orange;
+    color: black;
+    text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.action-btn:hover{
+    background-color: #000;
+    color: #ffcc00;
+    border: 3px solid #ffcc00;
+}
+.passive-btn{
+    font-size: 18px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.passive-btn:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid #ffcc00;
+    
+}
+
+/*Hero Section - Sadia*/
+
+/* Dropdown Content (hidden by default) - Sadia */
+
+
+.dropdown {
+    position: relative; /* Ensure dropdown-content is positioned relative to this */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* aligns the menu to be under link*/
+    background-color: black;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 3;
+    border-radius: 13px;
+    border: 2px solid white;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 13px;
+
+}
+
+
+
+
+/* Show the dropdown menu on hover - Sadia */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#astronomy {
+    text-align: center;
+    padding: 20px;
+}
+
+#astronomy p {
+    font-size: 18px; /* Keeps the font size unchanged */
+    margin: 0px 200px;
+}
+
+li {
+    line-height: 30px;
+}
+
+#login {
+    text-decoration: none;
+    text-align: left;
+}
+
+
+#pages {
+    text-align: justify;
+    margin: 0px 200px;
+}
+
+#pages li {
+    padding: 40px 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Align items in the center */
+    gap: 20px; /* Add spacing between items */
+    background-color: #000; /* Optional: set background color */
+    padding: 10px 0; /* Adjust padding */
+}
+
+
+
+form a,
+input {
+    margin: 10px;
+}
+
+.bth {
+    text-align: center;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+#ticker {
+    width: 100%;
+    text-align: center; /* Centers the text */
+    background-color: rgb(0, 0, 0); /* Background color for the ticker */
+    color: rgb(255, 255, 255); /* Text color */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 0;
+    border-top: 2px solid white; /* Optional border for styling */
+    position: fixed; /* Keeps ticker at the bottom */
+    bottom: 0;
+    left: 0;
+}
+
+.contact-us{
+    width: 100%;
+    height: auto;
+}
+
+.contact-section {
+    width: 100%;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+.contact-section h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+.contact-section p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: monospace;
+
+}
+
+.container {
+    display: flex; /* Ensure flex container behavior */
+}
+
+.contact-details {
+    width: 100%; /* Full width by default (for small screens) */
+    max-width: 100%; /* Ensure no overflow */
+    margin-bottom: 20px; /* Space between sections when stacked */
+    background-color: black; 
+    padding: 20px;
+    border-radius: 3px;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact-details h3 {
+    margin-bottom: 10px;
+
+}
+
+.contact-details p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+    /* Make images responsive by setting a max-width of 100% */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #astronomy p {
+        margin: 0 50px;
+    }
+
+    #pages {
+        margin: 0 50px;
+    }
+
+    #pages li {
+        padding: 30px 40px;
+    }
+
+    /* Adjust the form layout for smaller screens */
+
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Keep font size the same */
+    }
+
+    h2 {
+        font-size: 1.3rem; /* Keep font size the same */
+    }
+
+    #astronomy p {
+        font-size: 16px; /* Maintain text size, but adjust margins */
+        margin: 0 30px;
+    }
+
+    #pages {
+        margin: 0 20px;
+    }
+
+    #pages li {
+        padding: 20px 30px;
+    }
+
+    /* Stack navigation links for smaller screens */
+    nav {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Adjust the footer margin */
+    footer {
+        padding: 10px;
+    }
+
+    /* Adjust the ticker */
+    #ticker {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem; /* Keep font size the same */
+    }
+
+    h2 {
+        font-size: 1.1rem; 
+    }
+
+    #astronomy p {
+        font-size: 14px; /* Adjust text size to fit smaller screens */
+        margin: 0 20px;
+    }
+
+    #pages {
+        margin: 0 10px;
+    }
+
+    #pages li {
+        padding: 15px 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    #ticker {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+}
+
+
+

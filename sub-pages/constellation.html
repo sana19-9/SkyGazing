@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/subpage-css.css">
+    <title>Planets - Stargaze</title>
+</head>
+<body>
+    <div id="login">
+        <a href="login.html">login</a>
+        <a href="registration.html">register</a>
+    </div>
+    <div id="visitorCount">Visitors: <span id="visitorCountValue">0</span></div>
+        <h1>S K Y G A Z E</h1>
+        <hr>
+    <nav>
+        <a href="../index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about-us.html">ABOUT US</a>
+
+
+        <div class="dropdown">
+            <a href="sub-pages/observatories.html" class="dropbtn">OBSERVATORIES</a>
+            <div class="dropdown-content">
+              <a href="observatories.html#mauna">MAUNA KEA Observatory</a>
+              <a href="observatories.html#lowell">LOWELL Observatory</a>
+              <a href="observatories.html#keck">KECK Observatory</a>
+            </div>
+        </div>
+  
+
+        <div class="dropdown">
+          <a href="#" class="dropbtn">INFORMATION</a>
+          <div class="dropdown-content">
+              <a href="planets.html">PLANETS</a>
+              <a href="solar-eclipse.html">SOLAR ECLIPSE</a>
+              <a href="comets.html">COMETS</a>
+              <a href="bigbang.html">BIG BANG</a>
+              <a href="blackhole.html">BLACK HOLE</a>
+              <a href="evolution.html">EVOLUTION</a>
+              <a href="constellation.html">CONSTELLATIONS</a>
+          </div> 
+        </div>
+        <a href= "../index.html#contact"> CONTACT US</a>
+
+      
+
+    </nav>
+
+    <hr>
+
+    <div id="pages">
+        <h2>C O N S T E L L A T I O N</h2>
+        <hr>
+        <img src="conseltation image.jpg" alt="Constellation Image" width="1050px">
+        <p>
+            Constellations are groups of stars that form recognizable patterns in the sky. These patterns have been identified and named by various cultures over centuries. While the stars in a constellation may appear close to each other in the sky, they are often vastly different distances from Earth. The constellations we see today are part of a system that astronomers use to organize and map the night sky.
+        </p>
+        <p>
+            The first constellations likely go back to prehistory. People used them to relate stories of their beliefs, experiences, creation, and mythology. Different cultures and countries invented their own constellations, some of which lasted into the early 20th century before today's constellations were internationally recognized.
+        </p>
+        <p>
+            The recognition of constellations has changed significantly over time. Many changed in size or shape. Some became popular, only to drop into obscurity. Some were limited to a single culture or nation. Naming constellations also helped astronomers and navigators identify stars more easily
+        </p>
+        <p>
+            For more detailed information, visit the 
+            <a href="https://en.wikipedia.org/wiki/Constellation" target="_blank">Wikipedia page on Constellation.</a>
+        </p>
+        <h3>Watch a Detailed Video on Constellation</h3>
+        <div class="video-container">
+            <iframe 
+                width="1000" 
+                height="550" 
+                src="https://www.youtube.com/embed/QXeEAQtC75g" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <hr>
+        ©2024 Stargaze.com
+    </footer>
+    <div id="ticker"></div>
+    <script>
+        // Visitor count functionality
+        let visitorCount = localStorage.getItem('visitorCount') || 0;
+        visitorCount++;
+        localStorage.setItem('visitorCount', visitorCount);
+        document.getElementById('visitorCountValue').innerText = visitorCount;
+    
+        // Scrolling ticker for date, time, and location
+        function updateTicker() {
+            const date = new Date();
+            const options = { timeZoneName: 'short' };
+            const dateString = date.toLocaleString('en-US', options);
+            document.getElementById('ticker').innerText = `Current Date & Time: ${dateString}`;
+        }
+        setInterval(updateTicker, 1000);
+        updateTicker();
+    </script>
+</body>
+</html>

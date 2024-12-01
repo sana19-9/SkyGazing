@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/subpage-css.css">
+    <title>Planets - Stargaze</title>
+</head>
+<body>
+    <div id="login">
+        <a href="login.html">login</a>
+        <a href="registration.html">register</a>
+    </div>
+    <div id="visitorCount">Visitors: <span id="visitorCountValue">0</span></div>
+        <h1>S K Y G A Z E</h1>
+        <hr>
+    <nav>
+        <a href="../index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about-us.html">ABOUT US</a>
+
+        <div class="dropdown">
+            <a href="sub-pages/observatories.html" class="dropbtn">OBSERVATORIES</a>
+            <div class="dropdown-content">
+              <a href="observatories.html#mauna">MAUNA KEA Observatory</a>
+              <a href="observatories.html#lowell">LOWELL Observatory</a>
+              <a href="observatories.html#keck">KECK Observatory</a>
+            </div>
+        </div>
+  
+
+        <div class="dropdown">
+          <a href="#" class="dropbtn">INFORMATION</a>
+          <div class="dropdown-content">
+              <a href="planets.html">PLANETS</a>
+              <a href="solar-eclipse.html">SOLAR ECLIPSE</a>
+              <a href="comets.html">COMETS</a>
+              <a href="bigbang.html">BIG BANG</a>
+              <a href="blackhole.html">BLACK HOLE</a>
+              <a href="evolution.html">EVOLUTION</a>
+              <a href="constellation.html">CONSTELLATIONS</a>
+          </div> 
+        </div>
+        <a href= "../index.html#contact"> CONTACT US</a>
+
+      
+
+    </nav>
+
+    <hr>
+
+    <div id="pages">
+        <h2>C O M E T S</h2>
+        <hr>
+        <img src="comet image.jpg" alt="Comets Image" width="1050px">
+        <p>
+            A comet is a ball of mostly ice that moves around in outer space. Comets are often described as "dirty snowballs". ... The orbital inclinations of comets are usually high and not near the ecliptic where most solar system objects are found. Most of them are long-period comets and come from the Kuiper belt.
+        </p>
+        <p>
+            This produces an extended, gravitationally unbound atmosphere or coma surrounding the nucleus, and sometimes a tail of gas and dust gas blown out from the coma. These phenomena are due to the effects of solar radiation and the outstreaming solar wind plasma acting upon the nucleus of the comet..
+        </p>
+        <p>
+            Comets usually have highly eccentric elliptical orbits, and they have a wide range of orbital periods, ranging from several years to potentially several millions of years. Short-period comets originate in the Kuiper belt or its associated scattered disc, which lie beyond the orbit of Neptune. Long-period comets are thought to originate in the Oort cloud, a spherical cloud of icy bodies extending from outside the Kuiper belt to halfway to the nearest star.[2
+        </p>
+        <p>
+            For more detailed information, visit the 
+            <a href="https://en.wikipedia.org/wiki/Comet" target="_blank">Wikipedia page on Comets.</a>
+        </p>
+        <h3>Watch a Detailed Video on Comets</h3>
+        <div class="video-container">
+            <iframe 
+                width="1000" 
+                height="550" 
+                src="https://www.youtube.com/embed/ggwX_uZW3i4" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <hr>
+        ©2024 Stargaze.com
+    </footer>
+    <div id="ticker"></div>
+    <script>
+        // Visitor count functionality
+        let visitorCount = localStorage.getItem('visitorCount') || 0;
+        visitorCount++;
+        localStorage.setItem('visitorCount', visitorCount);
+        document.getElementById('visitorCountValue').innerText = visitorCount;
+    
+        // Scrolling ticker for date, time, and location
+        function updateTicker() {
+            const date = new Date();
+            const options = { timeZoneName: 'short' };
+            const dateString = date.toLocaleString('en-US', options);
+            document.getElementById('ticker').innerText = `Current Date & Time: ${dateString}`;
+        }
+        setInterval(updateTicker, 1000);
+        updateTicker();
+    </script>
+</body>
+</html>
+

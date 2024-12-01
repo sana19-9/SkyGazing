@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/subpage-css.css">
+    <title>Planets - Stargaze</title>
+</head>
+<body>
+    <div id="login">
+        <a href="login.html">login</a>
+        <a href="registration.html">register</a>
+    </div>
+    <div id="visitorCount">Visitors: <span id="visitorCountValue">0</span></div>
+        <h1>S K Y G A Z E</h1>
+        <hr>
+    <nav>
+        <a href="../index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about-us.html">ABOUT US</a>
+
+
+        <div class="dropdown">
+            <a href="sub-pages/observatories.html" class="dropbtn">OBSERVATORIES</a>
+            <div class="dropdown-content">
+              <a href="observatories.html#mauna">MAUNA KEA Observatory</a>
+              <a href="observatories.html#lowell">LOWELL Observatory</a>
+              <a href="observatories.html#keck">KECK Observatory</a>
+            </div>
+        </div>
+  
+
+        <div class="dropdown">
+          <a href="#" class="dropbtn">INFORMATION</a>
+          <div class="dropdown-content">
+              <a href="planets.html">PLANETS</a>
+              <a href="solar-eclipse.html">SOLAR ECLIPSE</a>
+              <a href="comets.html">COMETS</a>
+              <a href="bigbang.html">BIG BANG</a>
+              <a href="blackhole.html">BLACK HOLE</a>
+              <a href="evolution.html">EVOLUTION</a>
+              <a href="constellation.html">CONSTELLATIONS</a>
+          </div> 
+        </div>
+        <a href= "../index.html#contact"> CONTACT US</a>
+
+      
+
+    </nav>
+
+    <hr>
+
+    <div id="pages">
+        <h2>E V O L U T I O N - O F - E A R T H </h2>
+        <hr>
+        <img src="earth image.jpg" alt="Earth Image" width="1050px">
+        <p>
+            The Earth has undergone a fascinating journey over the last 4.5 billion years, transforming from a molten mass to the diverse and vibrant planet we see today. This evolution encompasses a series of geological, atmospheric, and biological changes that shaped Earth's surface, climate, and ecosystems.
+        </p>
+        <p>
+            Approximately one-third the age of the universe, Earth formed by accretion from the solar nebula. Volcanic outgassing created the primordial atmosphere and oceans, but the early atmosphere contained almost no oxygen.
+        </p>
+        <p>
+            During its early stage, a giant impact collision with a planet-sized body named Theia is thought to have formed the Moon. Over time, the Earth cooled, forming a solid crust and allowing liquid water on its surface.
+        </p>
+        <p>
+            For more detailed information, visit the 
+            <a href="https://en.wikipedia.org/wiki/History_of_Earth#References" target="_blank">Wikipedia page on History Of Earth.</a>
+        </p>
+        <h3>Watch a Detailed Video on Earth's Evolution</h3>
+        <div class="video-container">
+            <iframe 
+                width="1000" 
+                height="550" 
+                src="https://www.youtube.com/embed/LinWJsangs4" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <hr>
+        ©2024 Stargaze.com
+    </footer>
+    <div id="ticker"></div>
+    <script>
+        // Visitor count functionality
+        let visitorCount = localStorage.getItem('visitorCount') || 0;
+        visitorCount++;
+        localStorage.setItem('visitorCount', visitorCount);
+        document.getElementById('visitorCountValue').innerText = visitorCount;
+    
+        // Scrolling ticker for date, time, and location
+        function updateTicker() {
+            const date = new Date();
+            const options = { timeZoneName: 'short' };
+            const dateString = date.toLocaleString('en-US', options);
+            document.getElementById('ticker').innerText = `Current Date & Time: ${dateString}`;
+        }
+        setInterval(updateTicker, 1000);
+        updateTicker();
+    </script>
+</body>
+</html>
